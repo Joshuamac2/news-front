@@ -9,7 +9,7 @@ Even if the person on the street is aware of the way that algorithms manipulate 
 
 Ways will be found to characterise articles and even outlets themselves, based on authenticity, integrity, accuracy, and so on. Over time, my hope is that the site will evolve to get better at fulfilling its aims, and in doing so, serve its readers and debaters.
 
-- [Front-end](https://github.com/Joshuamac2/news-server)
+- [Back-end](https://github.com/Joshuamac2/news-server)
 
 
 ---
