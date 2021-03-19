@@ -13,8 +13,11 @@ import Register from "../components/auth/Register.js";
 import Login from "../components/auth/Login.js";
 import PrivateRoute from "../components/private-route/PrivateRoute";
 import Dashboard from "../components/dashboard/Dashboard";
+import { NewsContextProvider } from "../NewsContext";
+import News from "../components/News";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "../App.css"
 
 if (localStorage.jwtToken) {
   const token = localStorage.jwtToken;
@@ -36,6 +39,9 @@ function App() {
       <Router>
         <div className="App">
         <NavBar />
+        <NewsContextProvider>
+          <News />
+        </NewsContextProvider>
             <Route path="/" exact component={Landing} />
             <Route path="/register" exact component={Register} />
             <Route path="/login" exact component={Login} />
