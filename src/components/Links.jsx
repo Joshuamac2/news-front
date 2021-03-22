@@ -18,11 +18,13 @@ class Links extends Component {
     render() {
         return (
             <React.Fragment>
-                <Link to="/" className="navbar-brand">
-                    Log in
-                </Link>
                 <Collapse>
                     <List>
+                        <Item>
+                            <Link to="/" className="nav-link">
+                              Home
+                            </Link>
+                        </Item>
                         <Item>
                             <Link to="/articles/list" className="nav-link">
                                 List Articles
@@ -31,6 +33,11 @@ class Links extends Component {
                         <Item>
                             <Link to="/articles/create" className="nav-link">
                                 Create Article
+                            </Link>
+                        </Item>
+                        <Item>
+                            <Link to="/landing" className="nav-link">
+                                Login or register 
                             </Link>
                         </Item>
                     </List>

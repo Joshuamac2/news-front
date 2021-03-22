@@ -39,17 +39,17 @@ function App() {
       <Router>
         <div className="App">
         <NavBar />
-        <NewsContextProvider>
-          <News />
-        </NewsContextProvider>
-            <Route path="/" exact component={Landing} />
+            <Route path="/" exact>
+              <NewsContextProvider><News /></NewsContextProvider>
+            </Route>
             <Route path="/register" exact component={Register} />
             <Route path="/login" exact component={Login} />
             <Route path="/articles/list" exact component={ArticlesList} />
             <Route path="/articles/create" exact component={ArticlesInsert} />
-            <Switch>
-            <PrivateRoute exact path="/dashboard" component={Dashboard} />
-          </Switch>
+            <Route path="/landing" exact component={Landing} />
+              <Switch>
+                <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              </Switch>
           </div>
       </Router>
     </Provider>
