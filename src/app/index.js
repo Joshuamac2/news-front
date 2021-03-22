@@ -7,7 +7,7 @@ import { setCurrentUser, logoutUser } from "../api/index";
 import { Provider } from "react-redux";
 import store from "../store";
 
-import { NavBar, Landing } from '../components';
+import { NavBar } from '../components';
 import { ArticlesList, ArticlesInsert } from '../pages';
 import Register from "../components/auth/Register.js";
 import Login from "../components/auth/Login.js";
@@ -42,11 +42,16 @@ function App() {
             <Route path="/" exact>
               <NewsContextProvider><News /></NewsContextProvider>
             </Route>
+            <Route path="/landing" exact>
+              <div className="rowC">
+                <Login />
+                <Register />
+              </div>
+            </Route>
             <Route path="/register" exact component={Register} />
             <Route path="/login" exact component={Login} />
             <Route path="/articles/list" exact component={ArticlesList} />
             <Route path="/articles/create" exact component={ArticlesInsert} />
-            <Route path="/landing" exact component={Landing} />
               <Switch>
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
               </Switch>
