@@ -14,6 +14,11 @@ const Item = styled.div.attrs({
     className: 'collpase navbar-collapse',
 })``
 
+const Right = styled.div.attrs({
+    className: 'navbar-nav ml-auto',
+})``
+
+
 class Links extends Component {
     render() {
         return (
@@ -35,12 +40,19 @@ class Links extends Component {
                                 Create Article
                             </Link>
                         </Item>
-                        <Item>
-                            <Link to="/landing" className="nav-link">
-                                Login or register 
-                            </Link>
-                        </Item>
                     </List>
+                    <Right>
+                    <Item>
+                        <Link to="/landing" className="nav-link">
+                            Login or register
+                        </Link>
+                    </Item>
+                    <Item>
+                        <Link to="/dashboard" className="nav-link">
+                            Log out
+                        </Link>
+                    </Item>
+                    </Right>
                 </Collapse>
             </React.Fragment>
         )

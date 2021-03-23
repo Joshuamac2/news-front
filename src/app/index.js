@@ -15,6 +15,10 @@ import PrivateRoute from "../components/private-route/PrivateRoute";
 import Dashboard from "../components/dashboard/Dashboard";
 import { NewsContextProvider } from "../NewsContext";
 import News from "../components/News";
+import Landing from "../components/Landing";
+
+
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../App.css"
@@ -42,12 +46,7 @@ function App() {
             <Route path="/" exact>
               <NewsContextProvider><News /></NewsContextProvider>
             </Route>
-            <Route path="/landing" exact>
-              <div className="rowC">
-                <Login />
-                <Register />
-              </div>
-            </Route>
+            <Route path="/landing" exact component={Landing} />
             <Route path="/register" exact component={Register} />
             <Route path="/login" exact component={Login} />
             <Route path="/articles/list" exact component={ArticlesList} />

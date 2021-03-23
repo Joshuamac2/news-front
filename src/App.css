@@ -11,15 +11,6 @@ body {
   background: rgb(251, 254, 255);
 }
 
-.rowC{
-  display:flex; flex-direction:row;
-}
-
-.container2 {
-  position: relative;
-  top: 50px;
-}
-
 .all__news {
   margin: 50px auto;
   display: grid;

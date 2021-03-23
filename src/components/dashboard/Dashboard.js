@@ -13,15 +13,11 @@ class Dashboard extends Component {
     const { user } = this.props.auth;
 
     return (
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
+      <div style={{ height: "35vh" }} className="container valign-wrapper">
         <div className="row">
           <div className="landing-copy col s12 center-align">
             <h4>
-              <b>Hey there,</b> {user.name.split(" ")[0]}
-              <p className="flow-text grey-text text-darken-1">
-                You are logged into a full-stack{" "}
-                <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
-              </p>
+              Hey {user.name.split(" ")[0]}, Log out here!
             </h4>
             <button
               style={{
@@ -31,7 +27,7 @@ class Dashboard extends Component {
                 marginTop: "1rem"
               }}
               onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+              className="btn btn-large waves-effect waves-light hoverable blue accent-3 white-text"
             >
               Logout
             </button>
