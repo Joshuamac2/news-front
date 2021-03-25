@@ -10,7 +10,7 @@ export const NewsContextProvider = (props) => {
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/everything?q=bbc&from=2021-02-22&sortBy=publishedAt&apiKey=${API_KEY}`
+        `https://newsapi.org/v2/everything?q=covid&domains=bbc.co.uk,cnn.com,independent.co.uk,foxnews.com,theguardian.com&apiKey=${API_KEY}`
       )
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
