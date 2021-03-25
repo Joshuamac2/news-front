@@ -11,7 +11,7 @@ function News(props) {
       <h1 className="head__text">The News Lab</h1>
       <div className="all__news">
         {data
-          ? data.articles.map((news) => (
+          ? data.articles.slice(0, 10).map((news) => (
               <NewsArticle data={news} key={news.url} />
             ))
           : "Loading"}
