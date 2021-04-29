@@ -7,10 +7,10 @@ function News(props) {
   console.log(data);
 
   return (
-    <div>
-      <h1 className="head__text">The News Lab</h1>
-      <div className="all__news">
-        {data
+    <div className="all__news">
+      <h1>The News Lab</h1>
+      <div className="row mt-4">
+         {data
           ? data.articles.slice(0, 10).map((news) => (
               <NewsArticle data={news} key={news.url} />
             ))
