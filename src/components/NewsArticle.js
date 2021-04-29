@@ -1,5 +1,11 @@
 import React from "react";
 
+const getColor = (wing) => {
+    if (wing === "CNN") return 'red';
+    if (wing === "BBC News") return 'blue';
+    return '';
+};
+
 function NewsArticle({ data }) {
   return (
     <div className="news">
@@ -7,7 +13,7 @@ function NewsArticle({ data }) {
       <p className="news__desc">{data.description}</p>
       <span className="news__author">{data.author}</span> <br />
       <span className="news__published">{data.publishedAt}</span>
-      <span className="news__source">{data.source.name}</span>
+      <span style={{ color: getColor(data.source.name) }} className="news__source">{data.source.name}</span>
     </div>
   );
 }

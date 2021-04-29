@@ -82,23 +82,23 @@ class ArticlesInsert extends Component {
         const { title, sub, link } = this.state
         return (
             <Wrapper>
-                <Title>Create Article</Title>
+                <Title>Seen something worth discussing?</Title>
 
-                <Label>Name: </Label>
+                <Label>Article title: </Label>
                 <InputText
                     type="text"
                     value={title}
                     onChange={this.handleChangeInputTitle}
                 />
 
-                <Label>Sub: </Label>
+                <Label>Content: </Label>
                 <InputText
                     type="text"
                     value={sub}
                     onChange={this.handleChangeInputSub}
                 />
 
-                <Label>Link: </Label>
+                <Label>Posted Link: </Label>
                 <InputText
                     type="text"
                     value={link}
