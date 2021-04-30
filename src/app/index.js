@@ -16,9 +16,7 @@ import Dashboard from "../components/dashboard/Dashboard";
 import { NewsContextProvider } from "../NewsContext";
 import News from "../components/News";
 import Landing from "../components/Landing";
-
-
-
+import Article from "../components/Article";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../App.css"
@@ -36,16 +34,17 @@ if (localStorage.jwtToken) {
   }
 }
 
-
 function App() {
   return (
     <Provider store={store}>
       <Router>
         <div className="App">
         <NavBar />
+        <NewsContextProvider>
             <Route path="/" exact>
-              <NewsContextProvider><News /></NewsContextProvider>
+              <News />
             </Route>
+            <Route path="/article" exact component={Article} />
             <Route path="/landing" exact component={Landing} />
             <Route path="/register" exact component={Register} />
             <Route path="/login" exact component={Login} />
@@ -54,6 +53,7 @@ function App() {
               <Switch>
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
               </Switch>
+              </NewsContextProvider>
           </div>
       </Router>
     </Provider>
