@@ -12,6 +12,7 @@ body {
 }
 
 .all__news {
+  display: flex;
   padding: 30px;
   margin-top: 5px;
   margin-left: 20px;
