@@ -11,15 +11,34 @@ body {
   background: rgb(251, 254, 255);
 }
 
+.Title {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  background: #B0C4DE;
+  font-family: "Times New Roman";
+}
+
 .all__news {
   display: flex;
-  padding: 30px;
+  padding: 20px;
   margin-top: 5px;
-  margin-left: 20px;
+  margin-left: 50px;
+}
+
+.right {
+  flex: 1;
+}
+
+.left {
+  flex: 1;
 }
 
 .news {
-  max-width: 600px;
+  max-width: 550px;
   padding: 30px;
   border: 2px solid lightgray;
   border-radius: 10px;

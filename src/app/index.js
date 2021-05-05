@@ -17,6 +17,8 @@ import { NewsContextProvider } from "../NewsContext";
 import News from "../components/News";
 import Landing from "../components/Landing";
 import Article from "../components/Article";
+import Title from '../components/Title';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../App.css"
