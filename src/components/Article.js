@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 
 import { NewsContext } from "../NewsContext";
 
+import ArticleApp from "./ArticleApp";
+
  const Article = () => {
    const {data} = useContext(NewsContext);
    const id = window?.location?.search?.replace('?id=', "")
@@ -14,6 +16,7 @@ import { NewsContext } from "../NewsContext";
                 <a href={data.articles[id].url}>{data.articles[id].url}</a>
              </div>)
            :'loading'}
+           <ArticleApp />
        </div>
      );
  }

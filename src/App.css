@@ -12,13 +12,11 @@ body {
 }
 
 .Title {
-  margin: auto;
   text-align: center;
-  width: 60%;
-  padding: 20px;
-  border-radius: 10px;
-  color: white;
-  background: #B0C4DE;
+  width: 100%;
+  padding: 120px;
+  color: black;
+  background: #F0F0F0;
   font-family: "Times New Roman";
 }
 
