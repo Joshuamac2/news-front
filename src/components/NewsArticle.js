@@ -11,6 +11,7 @@ function NewsArticle({ data, id }) {
       <h1 className="news__title">{data.title}</h1>
       <p className="news__desc">{data.description}</p>
       <span className="news__author">{data.author}</span> <br />
+      <span className="news__source"><img style={{width: '350px', height: '250px'}} src={data.urlToImage}/></span>
       <span className="news__published">{data.publishedAt}</span>
       <span className="news__source">{data.source.name}</span>
     </div>

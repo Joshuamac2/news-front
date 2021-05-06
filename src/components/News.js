@@ -9,9 +9,9 @@ const left = ['The Guardian', 'BBC News'];
 
 function News(props) {
   const { data } = useContext(NewsContext);
+  console.log(data);
 
   return (
-
     <div className="home">
         <Title />
         <div className="all__news">
