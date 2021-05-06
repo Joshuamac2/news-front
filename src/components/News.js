@@ -4,7 +4,7 @@ import NewsArticle from "./NewsArticle";
 import Title from "./Title";
 
 
-const right = ["Sky.com", "Daily Mail"];
+const right = ["Sky.com", "Daily Mail", "ITV News"];
 const left = ['The Guardian', 'BBC News'];
 
 function News(props) {
