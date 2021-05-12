@@ -15,14 +15,16 @@ function News(props) {
     <div className="home">
         <Title />
         <div className="all__news">
-          <div className="right">
+          <div className="left">
+          <div className="left_news"><h2> News from the Left</h2></div>
             {data
               ? data.articles.filter(wing => left.includes(wing.source.name)).slice(0, 10).map((news, index) => (
                 <NewsArticle data={news} key={news.url} id={index} />
                 ))
               : "Loading"}
             </div>
-            <div className="left">
+            <div className="right">
+            <div className="right_news"><h2> News from the right </h2></div>
               {data
                 ? data.articles.filter(wing => right.includes(wing.source.name)).slice(0, 10).map((news, index) => (
                   <NewsArticle data={news} key={news.url} id={index} />

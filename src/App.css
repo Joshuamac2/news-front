@@ -8,16 +8,27 @@ body {
   font-family: inter;
   width: 100%;
   margin: 0 auto;
-  background: rgb(251, 254, 255);
+  background: #F8F8F8;
 }
 
 .Title {
   text-align: center;
-  width: 100%;
-  padding: 120px;
   color: black;
-  background: #F0F0F0;
-  font-family: "Times New Roman";
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.subText {
+  width: 500px
+}
+
+.logo {
+  margin-right: 60px;
+
+  width: 300px;
 }
 
 .all__news {
@@ -31,15 +42,33 @@ body {
   flex: 1;
 }
 
+.right_news {
+   background: blue;
+   color: white;
+   border-radius: 20px 20px 0px 0px;
+   height: 40px;
+   width: 92.5%;
+   text-align: center;
+}
+
 .left {
   flex: 1;
 }
 
+.left_news {
+   background: red;
+   color: white;
+   border-radius: 20px 20px 0px 0px;
+   height: 40px;
+   width: 92.5%;
+   text-align: center;
+}
+
 .news {
-  margin-top: 10px;
   max-width: 550px;
   padding: 30px;
   border: 2px solid lightgray;
+  background: white;
 }
 
 .newsArticle {
@@ -53,6 +82,7 @@ body {
 .news__title {
   padding-bottom: 10px;
   border-bottom: 1px solid lightgray;
+  font-size: 20px;
 }
 
 .news__desc {
