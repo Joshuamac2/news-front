@@ -11,7 +11,7 @@ body {
   background: #F8F8F8;
 }
 
-.Title {
+.title {
   text-align: center;
   color: black;
   background: white;
@@ -27,7 +27,6 @@ body {
 
 .logo {
   margin-right: 60px;
-
   width: 300px;
 }
 
@@ -35,32 +34,37 @@ body {
   display: flex;
   padding: 20px;
   margin-top: 5px;
-  margin-left: 50px;
+  margin-left: 60px;
+  width: 90%;
+
 }
 
 .right {
+  padding: 20px;
+
   flex: 1;
 }
 
 .right_news {
-   background: blue;
+
+   background: linear-gradient(to bottom right, #ff0000 -34%, #ffffff 89%);
    color: white;
    border-radius: 20px 20px 0px 0px;
    height: 40px;
-   width: 92.5%;
    text-align: center;
 }
 
 .left {
+  padding: 20px;
+
   flex: 1;
 }
 
 .left_news {
-   background: red;
+   background: linear-gradient(to bottom right, #ccffff 5%, #3333ff 121%);
    color: white;
    border-radius: 20px 20px 0px 0px;
    height: 40px;
-   width: 92.5%;
    text-align: center;
 }
 

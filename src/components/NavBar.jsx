@@ -10,7 +10,7 @@ const Container = styled.div.attrs({
 `
 
 const Nav = styled.nav.attrs({
-    className: 'navbar navbar-expand-lg navbar-white bg-dark',
+    className: 'navbar navbar-expand-lg navbar-light bg-white',
 })`
     margin-bottom: 20 px;
 `
