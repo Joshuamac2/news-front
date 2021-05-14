@@ -17,6 +17,9 @@ import { NewsContextProvider } from "../NewsContext";
 import News from "../components/News";
 import Landing from "../components/Landing";
 import Article from "../components/Article";
+import Comment from "../components/Comment";
+
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../App.css"
@@ -44,6 +47,8 @@ function App() {
             <Route path="/" exact>
               <News />
             </Route>
+            <Route path="/comments" exact component={Comment} />
+
             <Route path="/article" exact component={Article} />
             <Route path="/landing" exact component={Landing} />
             <Route path="/register" exact component={Register} />

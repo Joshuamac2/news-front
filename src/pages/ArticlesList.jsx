@@ -6,6 +6,10 @@ import styled from 'styled-components'
 
 import 'react-table-6/react-table.css'
 
+const Title = styled.h1.attrs({
+    className: 'h1',
+})``
+
 const Wrapper = styled.div`
     padding: 0 40px 40px 40px;
 `
@@ -94,7 +98,9 @@ class ArticlesList extends Component {
         }
 
         return (
+
             <Wrapper>
+            <Title>UNDER CONSTRUCTION!!</Title>
                 {showTable && (
                     <ReactTable
                         data={articles}

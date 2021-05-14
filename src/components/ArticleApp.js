@@ -21,7 +21,7 @@ class ArticleApp extends Component {
     this.setState({ loading: true });
 
     // get all the comments
-    fetch("http://localhost:7777")
+    fetch("http://localhost:3000/api")
       .then(res => res.json())
       .then(res => {
         this.setState({

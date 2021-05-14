@@ -1,7 +1,12 @@
 import React, { useContext } from "react";
+import styled from 'styled-components'
 
 import { NewsContext } from "../NewsContext";
 import ArticleApp from "./ArticleApp";
+
+const Title = styled.h1.attrs({
+    className: 'h1',
+})``
 
  const Article = () => {
    const {data} = useContext(NewsContext);
@@ -9,6 +14,8 @@ import ArticleApp from "./ArticleApp";
 
      return (
        <div>
+       <Title>UNDER CONSTRUCTION!!</Title>
+
          {data
            ? ( <div className="newsArticle">
               <h1 className="news__title">{data.articles[id].title}</h1>
@@ -18,7 +25,6 @@ import ArticleApp from "./ArticleApp";
               <span className="news__source">{data.articles[id].source.name}</span>
             </div>)
            :'loading'}
-           <ArticleApp />
        </div>
      );
  }

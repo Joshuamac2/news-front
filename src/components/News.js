@@ -4,8 +4,8 @@ import NewsArticle from "./NewsArticle";
 import Title from "./Title";
 
 
-const right = ["Sky.com", "Daily Mail", "ITV News"];
-const left = ['The Guardian', 'BBC News'];
+const right = ["Sky.com", "Daily Mail", "ITV News", "The Sun", "Express", "Mirror Online"];
+const left = ['The Guardian', 'BBC News', "Evening Standard", "Independent", "Google News"];
 
 function News(props) {
   const { data } = useContext(NewsContext);

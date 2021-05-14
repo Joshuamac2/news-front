@@ -82,6 +82,8 @@ class ArticlesInsert extends Component {
         const { title, sub, link } = this.state
         return (
             <Wrapper>
+                <Title>UNDER CONSTRUCTION!!</Title>
+
                 <Title>Seen something worth discussing?</Title>
 
                 <Label>Article title: </Label>
