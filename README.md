@@ -3,38 +3,31 @@
 
 The aim of this project is to create a new kind of community, bringing together readers of the news from all political biases.
 
-TheNewsLab will be a forum where the top 10 articles from the most popular news outlets are highlighted. Readers will be invited to engage in debate with other readers, and who don't necessarily share their world view or political persuasion.
+TheNewsLab will be a forum where the top 10 articles from the most popular news outlets are highlighted. The articles will be divided based on where the article is published.
 
-Even if the person on the street is aware of the way that algorithms manipulate the news, the effect is insidious — especially for younger people who are still forming a world view — drip-feeding our own bias until it is fully grown, wherever that may lead. TheNewslab will be configured to expose political bias through the medium of lively and thoughtful discussion, discussion that will look to take back the power to discriminate, to understand the ideologies, and even the motives of those who are projecting it.
+ Readers will be invited to engage in debate with other readers, and who don't necessarily share their world view or political persuasion.
 
-Ways will be found to characterise articles and even outlets themselves, based on authenticity, integrity, accuracy, and so on. Over time, my hope is that the site will evolve to get better at fulfilling its aims, and in doing so, serve its readers and debaters.
 
-- [Back-end](https://github.com/Joshuamac2/news-server)
-
+![Alt text](/public/newslab.png?raw=true "Home page")
 
 ---
 ## Functionality
 - News is uploaded through API
-- News outlets and its article are ranked on its political stance
-
-### Users
-
--  Sign in
--  Create profiles
--  Comment on posts
--  Comment on each others comments
--  Like posts and comments
--  Vote on posts and comments political biases
+- News will be divided based on its political stance
+- Users can sign in
+- Users post articles
+- Users Click on articles to start discussion
+- Users can comment on articles (Not complete)
 
 
 ### Tech
 - Front-end: React
 - Back-end: Node.js
-- Testing: Jest
-- Database: Mongo-db
+- Database: Mongodb
+- Express
 
+- [Back-end](https://github.com/Joshuamac2/news-server)
 ---
-## MVP
-- News will be hard-coded into database
-- Selected articles will be posted with short description and links
-- Users will view and comment on posts
+## Updates
+- The news API wont allow extra request, so until I find another API or set up await function and store in the backend I can not deploy.
+- Add comments into the database.
